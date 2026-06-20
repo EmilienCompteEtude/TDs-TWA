@@ -1,0 +1,117 @@
+/* CSS généré par IA*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9; 
+    color: #333;
+}
+
+header {
+    background-color: #1a438e;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.search-container input {
+    padding: 8px 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 250px;
+    font-size: 14px;
+    outline: none;
+}
+
+.main-container {
+    padding: 40px;
+}
+
+.product-grid {
+    display: grid;
+    /* Rendre la grille responsive avec auto-fill et une taille minimale de 280px */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border-radius: 8px; /* Bordures arrondies */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Ombres subtiles */
+    padding: 25px;
+    text-align: center;
+    position: relative;
+    border: 1px solid #eef2f5;
+    transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-2px);
+}
+
+.product-number {
+    background-color: #d32f2f;
+    color: white;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.product-card h2 {
+    font-size: 18px;
+    color: #222;
+    margin-bottom: 12px;
+}
+
+.product-card .description {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    height: 40px; 
+}
+
+.product-card .price {
+    font-weight: bold;
+    color: #1a438e;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.status-badge {
+    display: block;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.status-badge.in-stock {
+    background-color: #def7ec;
+    color: #03543f;
+}
+
+.status-badge.out-of-stock {
+    background-color: #fde8e8;
+    color: #9b1c1c;
+}

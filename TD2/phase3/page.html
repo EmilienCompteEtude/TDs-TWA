@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestionnaire de Stock</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Gestionnaire de Stock</h1>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Rechercher un produit...">
+        </div>
+    </header>
+
+    <main class="main-container">
+
+        <div class="product-grid" id="product-grid">
+
+            <div class="product-card">
+                <div class="product-number">1</div>
+                <h2>Clavier mécanique</h2>
+                <p class="description">Clavier RGB avec switches rapides pour gaming et bureautique.</p>
+                <p class="price">Prix : 79€</p>
+                <span class="status-badge in-stock">Statut : En stock</span>
+            </div>
+
+            <div class="product-card">
+                <div class="product-number">2</div>
+                <h2>Souris ergonomique</h2>
+                <p class="description">Souris sans fil avec précision haute performance.</p>
+                <p class="price">Prix : 39€</p>
+                <span class="status-badge out-of-stock">Statut : Rupture de stock</span>
+            </div>
+
+            <div class="product-card">
+                <div class="product-number">3</div>
+                <h2>Écran 24 pouces</h2>
+                <p class="description">Écran Full HD idéal pour le travail et le multimédia.</p>
+                <p class="price">Prix : 149€</p>
+                <span class="status-badge in-stock">Statut : En stock</span>
+            </div>
+
+        </div>
+
+        <div class="form-container">
+            <h3>Ajouter un produit</h3>
+            <form id="add-product-form">
+                <div class="form-group">
+                    <label for="new-name">Nom du produit :</label>
+                    <input type="text" id="new-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="new-desc">Description :</label>
+                    <input type="text" id="new-desc" required>
+                </div>
+                <div class="form-group">
+                    <label for="new-price">Prix (€) :</label>
+                    <input type="number" id="new-price" required>
+                </div>
+                <div class="form-group">
+                    <label for="new-status">Statut :</label>
+                    <select id="new-status">
+                        <option value="en-stock">En stock</option>
+                        <option value="rupture">Rupture de stock</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-submit">Ajouter au catalogue</button>
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>
